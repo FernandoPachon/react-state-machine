@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-state-machines/static/css/main.d10448a4.css",
-    "main.js": "/react-state-machines/static/js/main.46d4884d.js",
-    "static/js/787.38285caa.chunk.js": "/react-state-machines/static/js/787.38285caa.chunk.js",
-    "static/media/american_airlines.jpg": "/react-state-machines/static/media/american_airlines.0ddc36cd3e674e5ac488.jpg",
-    "index.html": "/react-state-machines/index.html",
-    "main.d10448a4.css.map": "/react-state-machines/static/css/main.d10448a4.css.map",
-    "main.46d4884d.js.map": "/react-state-machines/static/js/main.46d4884d.js.map",
-    "787.38285caa.chunk.js.map": "/react-state-machines/static/js/787.38285caa.chunk.js.map"
+    "main.css": "/react-state-machine/static/css/main.25ef7d78.css",
+    "main.js": "/react-state-machine/static/js/main.9e5efbee.js",
+    "static/js/787.e8ffdc85.chunk.js": "/react-state-machine/static/js/787.e8ffdc85.chunk.js",
+    "static/media/american_airlines.jpg": "/react-state-machine/static/media/american_airlines.0ddc36cd3e674e5ac488.jpg",
+    "index.html": "/react-state-machine/index.html",
+    "main.25ef7d78.css.map": "/react-state-machine/static/css/main.25ef7d78.css.map",
+    "main.9e5efbee.js.map": "/react-state-machine/static/js/main.9e5efbee.js.map",
+    "787.e8ffdc85.chunk.js.map": "/react-state-machine/static/js/787.e8ffdc85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d10448a4.css",
-    "static/js/main.46d4884d.js"
+    "static/css/main.25ef7d78.css",
+    "static/js/main.9e5efbee.js"
   ]
 }
