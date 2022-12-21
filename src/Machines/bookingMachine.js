@@ -1,6 +1,5 @@
 import { createMachine, assign } from "xstate";
-import { fetchCountries } from "../utils/Api";
-
+import { fetchCountries } from "../utils/api";
 
 const fillCountries = {
   initial: "loading",
@@ -43,19 +42,15 @@ const bookingMachine = createMachine(
       error: '',
     },
     states: {
-       //pantalla 1
       initial: {
         on: {
           START: {
             target: "search",
           },
-          
         },
       },
-      //pantalla 2
       search: {
         on: {
-          BACK:"initial",
           CONTINUE: {
             target: "passengers",
             actions: assign({
@@ -67,7 +62,6 @@ const bookingMachine = createMachine(
         },
         ...fillCountries,
       },
-      //pantalla 3
       tickets: {
         after: {
           5000: {
@@ -79,15 +73,17 @@ const bookingMachine = createMachine(
           FINISH: "initial",
         },
       },
-      //pantalla 4
       passengers: {
         on: {
-          DONE: "tickets",
+          BACK:"search",
+          DONE: {
+            target: "tickets",
+            cond: "moreThanOnePassenger"
+          },
           CANCEL: {
             target: "initial",
             actions: "cleanContext",
           },
-          BACK:"search",
           ADD: {
             target: "passengers",
             actions: assign((context, event) =>
@@ -104,6 +100,11 @@ const bookingMachine = createMachine(
         selectedCountry: "",
         passengers: [],
       }),
+    },
+    guards: {
+      moreThanOnePassenger: (context) => {
+        return context.passengers.length > 0;
+      }
     },
   }
 );
