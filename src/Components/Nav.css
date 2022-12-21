@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 500px;
-  background-color: rgba(255,255,255, 0.7);
+  max-width: 550px;
+  background-color: rgba(255,255,255, 0.8);
   padding: 16px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -14,6 +14,5 @@
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
- /*  color: #293684; */
- color:#36495A
+  color: #293684;
 }

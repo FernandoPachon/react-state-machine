@@ -4,10 +4,7 @@
   align-items: center;
   flex-direction: column;
 }
-.Tickets-description {
-  font-size: 25px;
-  font-style: italic;
-}
+
 .Tickets-finalizar {
   margin-left: auto;
 }
